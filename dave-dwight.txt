@@ -91,7 +91,7 @@ Codepen: https://codepen.io/davedwight/pen/GRrvBjN?editors=1100
     9) Go to your terminal, make sure that you're in the working directory, and type git status to see if your saved changes are showing up
     10) Add your changes to staging by typing git add .
     11) Commit your changes by typing git commit -m "Commit message explaining changes here"
-    12) Push your changes to github by typing git push -u branch-name
+    12) Push your changes to github by typing git push -u origin branch-name
     13) Go to github to your forked repo and click New Pull Request
     14) Select your forked repo in the base repository dropdown
     15) Write a message for the pull request
@@ -102,7 +102,10 @@ Codepen: https://codepen.io/davedwight/pen/GRrvBjN?editors=1100
 Stretch Questions
 
 1. What is the difference between an inline element and a block element?
+    A block element takes up the whole line and new elements get bumped to a new line. Inline elements can be positioned next to one another.
 2. What happens when an element is positioned absolutely? 
+    It is positioned relative to it's parent element. If it has no parent element, it is positioned relative to the body element.
 3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
-4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+4. Name 3 elements that are display block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    Block: div, h1, p. Inline: span, a. Inline block: button.
 5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
