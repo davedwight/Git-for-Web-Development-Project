@@ -1,42 +1,103 @@
 Codepen: https://codepen.io/davedwight/pen/GRrvBjN?editors=1100
 
 1. What is Semantic HTML? 
-2. What is HTML used for? 
-3. What is an attribute and where do we put it? 
+    HTML tags that have meaning / that describe the function of the element. For example, <section>, <h1>, and <p>
+2. What is HTML used for?
+    For creating the content and structure of a webpage.
+3. What is an attribute and where do we put it?
+    An attribute is a special word put inside the opening tag of an element to pass data that you don't want rendered on the page. Eg href and src.
 4. What is the h1 tag used for? How many times should I use it on a page?
+    It is used for the main header of a page or the title of the page. You should only use it once. 
 5. Name two tags that have required attributes
+    img (src) and a (href)
 6. What do we put in the head of our HTML document? 
+    The <title> element
 7. What is an id? 
+    An id is an attribute given to an html element so that the element can be selected when styling. An id can only apply to one element.
 8. What elements can I add an id to? 
+    Any element. 
 9. How many times can I use the same id on a page? 
+    Just once.
 10. What is a class? 
+    A CSS selector that is used to select one or more elements for styling.
 11. What elements can I add a class to? 
+    Any element.
 12. How many times can I use the same class on a page? 
+    As many as you want.
 13. How do I get my link to open in a new tab?
+    Inside the anchor opening tag, type target="_blank".
 14. What is the alt attribute in the image tag used for? 
+    It's alternate text if an image can't be displayed and is used in screen reader programs.
 15. How do I reference an id?
+    In your .css file, #id_name
 16. What is the difference between a section and a div
+    A section is semantic and implies a grouping of related content within the element. A div is not semantic, though both act as parent containers for children elements.
 17. What is CSS used for? 
+    Changing the appearance and style of a webpage.
 18. How to we select an element? Example - every h2 on the page
+    In your .css file, write h2 {CSS goes here}
 19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    They both are used to select elements for styling, but classes can be applied to multiple elements while an id can only be applied to one element on a page. You might use a class titled content-section which would could apply to all elements with this class. You might use an id titled hero-image which would only apply to the hero image.
 20. How do we select classes in CSS?
+    .className
 21. How do we select a p element with a single class of “human””?
+    p.human
 22. What is a parent child selector? When would this be useful? 
+    It is a way to select every child element within a parent element. For example div . selects all child elements that have a parent div. This would be useful when trying to apply styling across similar child elements across a page. 
 23. How do you select all links within a div with the class of sidebar?
+    div.sidebar a 
 24. What is a pseudo selector?
+    A selector that specifies a specific state of an element. For example, :hover and :link.
 25. What do we use the change the spacing between lines?
+    line-height
 26. What do we use to change the spacing between letters?
+    letter-spacing
 27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
 28. How do I add a 1px border around my div that is dotted and black?
+    div {
+        border: 1px dotted black;
+    }
 29. How do I select everything on the page? 
+    * {
+
+    }
 30. How do I write a comment in CSS?
+    /*Comment goes here*/
 31. How do I find out what file I am in, when I am using the command line? 
+    pwd
 32. Using the command line - how do I see a list of files/folders in my current folder?
+    ls
 33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    rm file_name. The file is gone forever. Also, you can use rm -r directory_name to delete a directory and all files inside the directory. This can delete a lot of files and directories with one line. 
 34. Why should I use version control? 
+    So that you have an updated version of your work, have smaller changes to look through when bugs appear, and so that it is easier to collaborate with others. 
 35. How often should I commit to github?
+    After completing a new feature or after 20 minutes, whichever comes first.
 36. What is the command we would use to push our repo up to github? 
+    git push -u origin branch-name
 37. Walk me through Lambda's git flow. 
+    1) Go to the repo on github
+    2) Fork the repo
+    3) Copy the https link to the forked repo
+    4) In your terminal, navigate to the directory where you want to store the repo 
+    5) Clone the repo by typing git clone paste_url_here
+    5) Navigate into the working directory by typing cd repo_name
+    6) Start a new branch of the repo by typing git checkout -b firstName-lastName
+    7) Type code . to open the repo in VS Code
+    8) Make changes to files in VS Code and save by entering command s
+    9) Go to your terminal, make sure that you're in the working directory, and type git status to see if your saved changes are showing up
+    10) Add your changes to staging by typing git add .
+    11) Commit your changes by typing git commit -m "Commit message explaining changes here"
+    12) Push your changes to github by typing git push -u branch-name
+    13) Go to github to your forked repo and click New Pull Request
+    14) Select your forked repo in the base repository dropdown
+    15) Write a message for the pull request
+    16) Click create pull request 
+
+
 
 Stretch Questions
 
