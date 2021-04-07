@@ -106,6 +106,8 @@ Stretch Questions
 2. What happens when an element is positioned absolutely? 
     It is positioned relative to it's parent element. If it has no parent element, it is positioned relative to the body element.
 3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    Give it display: inline-block
 4. Name 3 elements that are display block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
     Block: div, h1, p. Inline: span, a. Inline block: button.
 5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+    The box model is the structure for how html elements are laid out on a web page. Starting on the inside, you have content, padding, border, margin. All elements on a web page exist in the box model framework.
